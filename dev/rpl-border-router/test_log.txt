@@ -1,0 +1,27 @@
+[INFO: Main      ] Starting Contiki-NG-5e472c4-dirty
+[INFO: Main      ]  Net: sicslowpan
+[INFO: Main      ]  MAC: br-mac
+[INFO: Main      ] Link-layer address 0102.0304.0506.0708
+[INFO: Main      ] Tentative link-local IPv6 address fe80::302:304:506:708
+[INFO: Native    ] Added global IPv6 address fd00::302:304:506:708
+[INFO: ROOT      ] Contiki-NG Border Router started
+RPL-Border router started
+Opening tun interface:tun0
+ifconfig tun0 inet `hostname` up
+ifconfig tun0 add aaaa::1/64
+ifconfig tun0
+
+tun0      Link encap:UNSPEC  HWaddr 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  
+          inet addr:127.0.1.1  P-t-P:127.0.1.1  Mask:255.255.255.255
+          inet6 addr: aaaa::1/64 Scope:Global
+          inet6 addr: fe80::dbda:20ec:5935:ab00/64 Scope:Link
+          UP POINTOPOINT RUNNING NOARP MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:500 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+
+Setting prefix aaaa::1
+[INFO: BR        ] Server IPv6 addresses:
+[INFO: BR        ]   aaaa::212:4b00:1280:2d80
+[INFO: BR        ]   fe80::212:4b00:1280:2d80
